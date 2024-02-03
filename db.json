@@ -1,0 +1,112 @@
+{
+  "models": [
+    {
+      "id": 1,
+      "name": "codellama-13b-oasst-sft-v10",
+      "category": "Advanced Text Generation",
+      "image": "/1.jpeg",
+      "provider": "Hugging Face",
+      "code": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load tokenizer and model\ntokenizer = AutoTokenizer.from_pretrained(\"codellama-13b-oasst-sft-v10\")\nmodel = AutoModelForSequenceClassification.from_pretrained(\"codellama-13b-oasst-sft-v10\")\n\n# Example text\ntext = \"This is an example sentence.\"\n\n# Tokenize input text\ninputs = tokenizer(text, return_tensors=\"pt\")\n\n# Forward pass through the model\noutputs = model(**inputs)\n\n# Get prediction\npredicted_class_idx = torch.argmax(outputs.logits)\npredicted_class = model.config.id2label[predicted_class_idx.item()]\n\nprint(\"Predicted class:\", predicted_class)",
+      "details": "A text generation model designed for various text generation tasks. It utilizes a 13-billion parameter architecture optimized for OpenAI's Semantic Text Formatting (OASST) framework, version 10."
+    },
+    {
+      "id": 2,
+      "name": "falcon-40b-megacode2-oasst",
+      "category": "Software Development AI",
+      "image": "/2.jpeg",
+      "provider": "Open Assistant",
+      "code": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load tokenizer and model\ntokenizer = AutoTokenizer.from_pretrained(\"falcon-40b-megacode2-oasst\")\nmodel = AutoModelForSequenceClassification.from_pretrained(\"codellama-13b-oasst-sft-v10\")\n\n# Example text\ntext = \"This is an example sentence.\"\n\n# Tokenize input text\ninputs = tokenizer(text, return_tensors=\"pt\")\n\n# Forward pass through the model\noutputs = model(**inputs)\n\n# Get prediction\npredicted_class_idx = torch.argmax(outputs.logits)\npredicted_class = model.config.id2label[predicted_class_idx.item()]\n\nprint(\"Predicted class:\", predicted_class)",
+      "details": "Leveraging a robust 40-billion parameter architecture, this text generation model is specialized for MegaCode2 tasks and integrates seamlessly with OpenAI's Semantic Text Formatting (OASST)."
+    },
+    {
+      "id": 3,
+      "name": "pythia-12b-sft-v8-rlhf-2k-steps",
+      "category": "Text Generation",
+      "image": "/3.jpeg",
+      "provider": "OpenAI",
+      "code": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load tokenizer and model\ntokenizer = AutoTokenizer.from_pretrained(\"pythia-12b-sft-v8-rlhf-2k-steps\")\nmodel = AutoModelForSequenceClassification.from_pretrained(\"codellama-13b-oasst-sft-v10\")\n\n# Example text\ntext = \"This is an example sentence.\"\n\n# Tokenize input text\ninputs = tokenizer(text, return_tensors=\"pt\")\n\n# Forward pass through the model\noutputs = model(**inputs)\n\n# Get prediction\npredicted_class_idx = torch.argmax(outputs.logits)\npredicted_class = model.config.id2label[predicted_class_idx.item()]\n\nprint(\"Predicted class:\", predicted_class)",
+      "details": "A text generation model with a 12-billion parameter architecture optimized for OpenAI's Semantic Text Formatting (SFT) version 8. It features reinforcement learning fine-tuning over 2,000 steps."
+    },
+    {
+      "id": 4,
+      "name": "Wizard v1.1",
+      "category": "Enterprise AI Solutions",
+      "image": "/4.jpeg",
+      "provider": "Hugging Face",
+      "code": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load tokenizer and model\ntokenizer = AutoTokenizer.from_pretrained(\"Wizard-v1.1\")\nmodel = AutoModelForSequenceClassification.from_pretrained(\"codellama-13b-oasst-sft-v10\")\n\n# Example text\ntext = \"This is an example sentence.\"\n\n# Tokenize input text\ninputs = tokenizer(text, return_tensors=\"pt\")\n\n# Forward pass through the model\noutputs = model(**inputs)\n\n# Get prediction\npredicted_class_idx = torch.argmax(outputs.logits)\npredicted_class = model.config.id2label[predicted_class_idx.item()]\n\nprint(\"Predicted class:\", predicted_class)",
+      "details": "Renowned as the best overall model, Wizard v1.1 is an instruction-based text generation model. It produces lengthy responses and has been fine-tuned with a limited but high-quality dataset."
+    },
+    {
+      "id": 5,
+      "name": "GPT4All Falcon",
+      "category": "Semantic Text Processing",
+      "image": "/5.jpeg",
+      "provider": "Open Assistant",
+      "code": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load tokenizer and model\ntokenizer = AutoTokenizer.from_pretrained(\"GPT4All-Falcon\")\nmodel = AutoModelForSequenceClassification.from_pretrained(\"codellama-13b-oasst-sft-v10\")\n\n# Example text\ntext = \"This is an example sentence.\"\n\n# Tokenize input text\ninputs = tokenizer(text, return_tensors=\"pt\")\n\n# Forward pass through the model\noutputs = model(**inputs)\n\n# Get prediction\npredicted_class_idx = torch.argmax(outputs.logits)\npredicted_class = model.config.id2label[predicted_class_idx.item()]\n\nprint(\"Predicted class:\", predicted_class)",
+      "details": "Recognized as the best overall smaller model, Falcon is an instruction-based text generation model known for its swift responses. It's trained by TII and fine-tuned by Nomic AI."
+    },
+    {
+      "id": 6,
+      "name": "Hermes",
+      "category": "Contextual AI Solutions",
+      "image": "/6.jpeg",
+      "provider": "OpenAI",
+      "code": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load tokenizer and model\ntokenizer = AutoTokenizer.from_pretrained(\"Hermes\")\nmodel = AutoModelForSequenceClassification.from_pretrained(\"codellama-13b-oasst-sft-v10\")\n\n# Example text\ntext = \"This is an example sentence.\"\n\n# Tokenize input text\ninputs = tokenizer(text, return_tensors=\"pt\")\n\n# Forward pass through the model\noutputs = model(**inputs)\n\n# Get prediction\npredicted_class_idx = torch.argmax(outputs.logits)\npredicted_class = model.config.id2label[predicted_class_idx.item()]\n\nprint(\"Predicted class:\", predicted_class)",
+      "details": "A proficient text generation model, Hermes operates on instructions and delivers extensive responses. It's curated with 300,000 uncensored instructions and trained by Nous Research. "
+    },
+    {
+      "id": 7,
+      "name": "Snoozy",
+      "category": "AI Assistants",
+      "image": "/7.jpeg",
+      "provider": "Open Assistant",
+      "code": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load tokenizer and model\ntokenizer = AutoTokenizer.from_pretrained(\"Snozzy\")\nmodel = AutoModelForSequenceClassification.from_pretrained(\"codellama-13b-oasst-sft-v10\")\n\n# Example text\ntext = \"This is an example sentence.\"\n\n# Tokenize input text\ninputs = tokenizer(text, return_tensors=\"pt\")\n\n# Forward pass through the model\noutputs = model(**inputs)\n\n# Get prediction\npredicted_class_idx = torch.argmax(outputs.logits)\npredicted_class = model.config.id2label[predicted_class_idx.item()]\n\nprint(\"Predicted class:\", predicted_class)",
+      "details": "A highly capable text generation model, Snoozy operates on instructions and provides responses of superior quality. It's based on Groovy but offers higher quality responses."
+    },
+    {
+      "id": 8,
+      "name": "Mini",
+      "category": "Conversational AI",
+      "image": "/8.jpeg",
+      "provider": "Hugging Face",
+      "code": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load tokenizer and model\ntokenizer = AutoTokenizer.from_pretrained(\"Mini\")\nmodel = AutoModelForSequenceClassification.from_pretrained(\"codellama-13b-oasst-sft-v10\")\n\n# Example text\ntext = \"This is an example sentence.\"\n\n# Tokenize input text\ninputs = tokenizer(text, return_tensors=\"pt\")\n\n# Forward pass through the model\noutputs = model(**inputs)\n\n# Get prediction\npredicted_class_idx = torch.argmax(outputs.logits)\npredicted_class = model.config.id2label[predicted_class_idx.item()]\n\nprint(\"Predicted class:\", predicted_class)",
+      "details": "New model with novel dataset. Instruction based. Explain tuned datasets. Orca Research Paper dataset construction approaches. Licensed for commercial use."
+    },
+    {
+      "id": 9,
+      "name": "Orca ",
+      "category": "Enterprise AI Solutions",
+      "image": "/9.jpeg",
+      "provider": "Open Assistant",
+      "code": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load tokenizer and model\ntokenizer = AutoTokenizer.from_pretrained(\"Orca\")\nmodel = AutoModelForSequenceClassification.from_pretrained(\"codellama-13b-oasst-sft-v10\")\n\n# Example text\ntext = \"This is an example sentence.\"\n\n# Tokenize input text\ninputs = tokenizer(text, return_tensors=\"pt\")\n\n# Forward pass through the model\noutputs = model(**inputs)\n\n# Get prediction\npredicted_class_idx = torch.argmax(outputs.logits)\npredicted_class = model.config.id2label[predicted_class_idx.item()]\n\nprint(\"Predicted class:\", predicted_class)",
+      "details": "The largest version of the Mini Orca model, equipped with a robust architecture and the same novel dataset and instruction-based approach."
+    },
+    {
+      "id": 10,
+      "name": "Wizard Uncensored",
+      "category": "Privacy-Focused AI",
+      "image": "/10.jpeg",
+      "provider": "OpenAI",
+      "code": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load tokenizer and model\ntokenizer = AutoTokenizer.from_pretrained(\"Wizard-Uncensored\")\nmodel = AutoModelForSequenceClassification.from_pretrained(\"codellama-13b-oasst-sft-v10\")\n\n# Example text\ntext = \"This is an example sentence.\"\n\n# Tokenize input text\ninputs = tokenizer(text, return_tensors=\"pt\")\n\n# Forward pass through the model\noutputs = model(**inputs)\n\n# Get prediction\npredicted_class_idx = torch.argmax(outputs.logits)\npredicted_class = model.config.id2label[predicted_class_idx.item()]\n\nprint(\"Predicted class:\", predicted_class)",
+      "details": "Trained on uncensored assistant data and instruction data, Wizard Uncensored is an instruction-based text generation model. "
+    },
+    {
+      "id": 11,
+      "name": "Replit",
+      "category": "Developer Tools",
+      "image": "/11.jpeg",
+      "provider": "Hugging Face",
+      "code": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load tokenizer and model\ntokenizer = AutoTokenizer.from_pretrained(\"Replit\")\nmodel = AutoModelForSequenceClassification.from_pretrained(\"codellama-13b-oasst-sft-v10\")\n\n# Example text\ntext = \"This is an example sentence.\"\n\n# Tokenize input text\ninputs = tokenizer(text, return_tensors=\"pt\")\n\n# Forward pass through the model\noutputs = model(**inputs)\n\n# Get prediction\npredicted_class_idx = torch.argmax(outputs.logits)\npredicted_class = model.config.id2label[predicted_class_idx.item()]\n\nprint(\"Predicted class:\", predicted_class)",
+      "details": "Trained on a subset of the Stack, Replit is a code completion-based text generation model. It's licensed for commercial use."
+    },
+    {
+      "id": 12,
+      "name": "Bert",
+      "category": "Natural Language Processing",
+      "image": "/12.jpeg",
+      "provider": "Open Assistant",
+      "code": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load tokenizer and model\ntokenizer = AutoTokenizer.from_pretrained(\"Bert\")\nmodel = AutoModelForSequenceClassification.from_pretrained(\"codellama-13b-oasst-sft-v10\")\n\n# Example text\ntext = \"This is an example sentence.\"\n\n# Tokenize input text\ninputs = tokenizer(text, return_tensors=\"pt\")\n\n# Forward pass through the model\noutputs = model(**inputs)\n\n# Get prediction\npredicted_class_idx = torch.argmax(outputs.logits)\npredicted_class = model.config.id2label[predicted_class_idx.item()]\n\nprint(\"Predicted class:\", predicted_class)",
+      "details": "A model primarily designed for generating embeddings, which are representations of text suitable for various natural language processing tasks."
+    }
+  ]
+}
