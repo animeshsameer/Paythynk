@@ -14,7 +14,7 @@
       "type": "image/jpeg"
     }
   ],
-  "start_url": "/",
+  "start_url": "/client/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#007bff"
