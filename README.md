@@ -1,4 +1,6 @@
 # AI-Marketplace
+Comprehensive Doc Link
+link :::: https://drive.google.com/file/d/14IjgEWKdhK0c3fy8czeY9bW5uoDlg8kn/view?usp=drive_link
 
 Welcome to the AI Marketplace, where you can explore various AI models, check their details, and even find code samples for integration. Our platform offers featured models based on user interests, and you can filter through starred models, which are those highly rated by the community.
 
