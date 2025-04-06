@@ -11,7 +11,7 @@ function Footer() {
           <FaGithub className="mr-2" />
           <a
             className=""
-            href="https://github.com/royalpinto007/AI-Marketplace"
+            href=""
           >
             GitHub
           </a>

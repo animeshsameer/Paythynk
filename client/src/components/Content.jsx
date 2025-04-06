@@ -7,7 +7,7 @@ function Content() {
           {" "}
           <h2 className="sm:mb-10 max-w-lg text-2xl sm:text-4xl font-bold leading-snug lg:text-4xl lg:leading-snug inline-block">
             {" "}
-            About Marketplace
+            About PayThynk
             <span className="text-blue-600">AI</span>
           </h2>
         </div>

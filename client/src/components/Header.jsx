@@ -10,7 +10,7 @@ function Header() {
         <span className="mr-2 w-8">
           <img src="" alt="" />
         </span>
-        Marketplace<span className="text-blue-600">AI</span>
+        Pay<span className="text-blue-600">Thynk</span>
       </Link>
       <input type="checkbox" className="peer hidden" id="navbar-open" />
       <label
